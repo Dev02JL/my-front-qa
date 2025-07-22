@@ -1,6 +1,56 @@
 # Projet QANuxt - Frontend Nuxt.js
 
+**Développé par : Jean-Louis Nguyen**  
+**Date : Juillet 2025**
+
+## 🎯 **Présentation du projet**
+
+### **Architecture :**
+```
+Frontend (QANuxt) ←→ Backend (QA) ←→ MongoDB Atlas
+     Port: 3000         Port: 3001
+```
+
+### **Technologies :**
+- **Frontend** : Nuxt.js + Vue.js + Tailwind CSS
+- **Backend** : Node.js + Express + MongoDB
+- **Tests** : Jest + @testing-library/vue
+- **CI/CD** : GitHub Actions
+
+### **Fonctionnalité principale :**
+- **Page de connexion** : Formulaire email/password
+- **Appel API** : Communication avec backend `/login`
+- **Gestion des états** : Messages de succès et d'erreur
+
+### **Types de tests implémentés :**
+- ✅ **Tests unitaires** : Présence des champs et interactions
+- ✅ **Tests d'intégration** : Appels API et gestion des réponses
+- ✅ **Tests de validation** : Champs requis et formats
+- ✅ **Tests de gestion d'erreurs** : 401, 404, erreurs réseau
+
+---
+
 Ce projet est une application frontend construite avec Nuxt.js, Vue.js et Tailwind CSS pour l'interface de connexion.
+
+## 📁 **Structure des fichiers**
+
+### **Pages et composants :**
+- **Page principale** : `app/app.vue` - Page de connexion complète
+- **Composants d'icônes** : `components/IconCheckCircle.vue` - Icône de succès
+- **Composants d'icônes** : `components/IconExclamationTriangle.vue` - Icône d'erreur
+
+### **Configuration :**
+- **Configuration Nuxt** : `nuxt.config.ts` - Configuration du projet
+- **Configuration Jest** : `jest.config.cjs` - Configuration des tests
+- **Setup Jest** : `jest.setup.js` - Configuration globale des tests
+
+### **Tests :**
+- **Tests fonctionnels** : `tests/login.test.js` - Tests de la logique de connexion
+- **Tests de base** : `tests/simple.test.js` - Tests de base pour vérifier Jest
+- **Tests d'intégration** : `tests/login.test.js` - Tests des appels API
+
+### **Styles :**
+- **CSS principal** : `assets/css/main.css` - Styles Tailwind CSS (automatique)
 
 ## 🚀 Fonctionnalités
 
@@ -20,7 +70,7 @@ Ce projet est une application frontend construite avec Nuxt.js, Vue.js et Tailwi
 
 ```bash
 # Cloner le repository
-git clone <votre-repo-url>
+git clone git@github.com:Dev02JL/my-front-qa.git
 cd QANuxt
 
 # Installer les dépendances
