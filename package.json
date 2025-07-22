@@ -22,9 +22,11 @@
     "@babel/core": "^7.28.0",
     "@babel/preset-env": "^7.28.0",
     "@nuxt/test-utils": "^3.19.2",
+    "@pinia/testing": "^1.0.2",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/vue": "^8.1.0",
     "@vue/test-utils": "^2.4.6",
-    "jest": "^30.0.4"
+    "jest": "^30.0.4",
+    "jest-environment-jsdom": "^30.0.5"
   }
 }

@@ -1,10 +1,9 @@
 module.exports = {
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
-  moduleNameMapping: {
+  moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
-    '^~/(.*)$': '<rootDir>/$1',
-    '^vue$': 'vue/dist/vue.common.js'
+    '^~/(.*)$': '<rootDir>/$1'
   },
   testMatch: [
     '**/tests/**/*.test.js',
@@ -15,8 +14,8 @@ module.exports = {
     'components/**/*.{js,vue}',
     '!**/node_modules/**'
   ],
-  transform: {
-    '^.+\\.vue$': '@vue/vue3-jest',
-    '^.+\\.js$': 'babel-jest'
+  moduleFileExtensions: ['js', 'json', 'vue'],
+  testEnvironmentOptions: {
+    customExportConditions: ['node', 'node-addons']
   }
 } 
